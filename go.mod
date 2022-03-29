@@ -1,1 +1,1 @@
-module "github.com/koyeo/_crypto"
+module "github.com/gozelle/_crypto"
