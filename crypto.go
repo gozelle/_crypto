@@ -71,7 +71,7 @@ func DecryptText(salt, cipher string) (text string, err error) {
 	return
 }
 
-func Md5HMac(salt, text []byte) []byte {
+func HashMacMD5(salt, text []byte) []byte {
 	mac := hmac.New(md5.New, salt)
 	mac.Write(text)
 	return mac.Sum(nil)
